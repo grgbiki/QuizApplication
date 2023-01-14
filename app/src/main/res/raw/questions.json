@@ -26,8 +26,8 @@
   },
   {
     "question": "To keep the UI running smoothly, use ___ for long-running tasks, such as all database operations.",
-    "options": ",coroutines,ViewModels,returns,managed threads",
-    "answer": "AVD Manager"
+    "options": "coroutines,ViewModels,returns,managed threads",
+    "answer": "coroutines"
   },
   {
     "question": "Kotlin was developed by?",
