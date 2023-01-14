@@ -1,0 +1,153 @@
+[
+  {
+    "question": "You can create an emulator to simulate the configuration of a particular type of Android device using a tool like ___.",
+    "options": "Theme Editor,Android SDK Manager,AVD Manager,Virtual Editor",
+    "answer": "AVD Manager"
+  },
+  {
+    "question": "What parameter specifies the Android API level that Gradle should use to compile your app?",
+    "options": "minSdkVersion,compileSdkVersion,targetSdkVersion,testSdkVersion",
+    "answer": "compileSdkVersion"
+  },
+  {
+    "question": "What phrase means that the compiler validates types while compiling?",
+    "options": "Type safety,Data binding,Type validation,Wrong text",
+    "answer": "Type safety"
+  },
+  {
+    "question": "Which of the following is not true about fragments?",
+    "options": "A fragment has its own lifecycle and receives its own input events.,It is not possible to remove a fragment while the activity is running.,A fragment is defined in a Kotlin class.,A fragment's UI is defined in an XML layout file.",
+    "answer": "It is not possible to remove a fragment while the activity is running."
+  },
+  {
+    "question": "___ is a way to restrict direct access to some of an object’s fields.",
+    "options": ",Score,LiveData,Encapsulation,GameViewModel",
+    "answer": "Encapsulation"
+  },
+  {
+    "question": "To keep the UI running smoothly, use ___ for long-running tasks, such as all database operations.",
+    "options": ",coroutines,ViewModels,returns,managed threads",
+    "answer": "AVD Manager"
+  },
+  {
+    "question": "Kotlin was developed by?",
+    "options": "IBM,NetBeans,JetBrains,Oracle",
+    "answer": "JetBrains"
+  },
+  {
+    "question": "Kotlin is a statically-typed programming language which runs on the?",
+    "options": "JCM,JVM,JPM,JDM",
+    "answer": "JVM"
+  },
+  {
+    "question": "____ feature allows removing the risk of occurrence of NullPointerException in real time.",
+    "options": "Null Risk,Null Safety,Null Pointer,All of the above",
+    "answer": "Null Safety"
+  },
+  {
+    "question": "Kotlin is interoperable with Java because it uses JVM bytecode.",
+    "options": "Yes,No,Can be yes or no,Can not say",
+    "answer": "Yes"
+  },
+  {
+    "question": "Which of the following is Use for reading contents of file to ByteArray",
+    "options": "bufferedReader(),readText(),readBytes(),readLines()",
+    "answer": "readBytes()"
+  },
+  {
+    "question": "Does Kotlin support primitive Datatypes",
+    "options": "Yes,No,Can be yes or no,Can not say",
+    "answer": "No"
+  },
+  {
+    "question": "Choose the correct option related to Android.",
+    "options": "Android is a Web Browser,Android is an Operating System,Android is Web Server,None",
+    "answer": "Android is an Operating System"
+  },
+  {
+    "question": "What is an activity in android?",
+    "options": "Android class,Android Package,A single screen in an application with supporting java code,None",
+    "answer": "A single screen in an application with supporting java code"
+  },
+  {
+    "question": "Among the following options choose the one for which Android is based on Linux.",
+    "options": "Networking,Portability,Security,All",
+    "answer": "All"
+  },
+  {
+    "question": "Among the below virtual machines choose the one which is used by the Android operating system",
+    "options": "Dalvik Operating System,JVM,Simple Virtual Machine,None",
+    "answer": "Dalvik Operating System"
+  },
+  {
+    "question": "Identify the language on which Android is based upon.",
+    "options": "Python,C++,Java,Kotlin",
+    "answer": "Java"
+  },
+  {
+    "question": "The full form of APK is",
+    "options": "Android Page Kit,Android Phone Kit,Android Package Kit,Android Photo Kit",
+    "answer": "Android Package Kit"
+  },
+  {
+    "question": "What is manifest XML in android?",
+    "options": "It has all the information about application,It has information about layouts in an application,It has information about activities in an application,It has information about packages in an application",
+    "answer": "It has all the information about application"
+  },
+  {
+    "question": "What is the use of a content provider in Android?",
+    "options": "For sharing data between applications,For storing data in the database,For sending data from an application to other application,For sharing data between activities",
+    "answer": "For sending data from an application to other application"
+  },
+
+  {
+    "question": "For which of the following Android is mainly developed?",
+    "options": "Servers,Desktops,Laptops,Mobile devices",
+    "answer": "Mobile devices"
+  },
+  {
+    "question": "Which of the following is the first mobile phone released that ran the Android OS?",
+    "options": "HTC Hero,Google gPhone,T - Mobile G1,None of the above",
+    "answer": "T - Mobile G1"
+  },
+  {
+    "question": "What does API stand for?",
+    "options": "Application Programming Interface,Android Programming Interface,Android Page Interface,Application Page Interface",
+    "answer": "Application Programming Interface"
+  },
+  {
+    "question": "Which of the following converts Java byte code into Dalvik byte code?",
+    "options": "Dalvik converter,Dex compiler,Mobile interpretive compiler (MIC),None of the above",
+    "answer": "Dex compiler"
+  },
+  {
+    "question": "How can we stop the services in android?",
+    "options": "By using the stopSelf() and stopService() method,By using the finish() method,By using system.exit() method,None of the above",
+    "answer": "By using the stopSelf() and stopService() method"
+  },
+  {
+    "question": "How can we kill an activity in android?",
+    "options": "Using finish() method,Using finishActivity(int requestCode),Both,Neither",
+    "answer": "Both"
+  },
+  {
+    "question": "ADB stands for -",
+    "options": "Android debug bridge,Android delete bridge,Android destroy bridge,None",
+    "answer": "Android debug bridge"
+  },
+  {
+    "question": "Which of the following kernel is used in Android?",
+    "options": "MAC,Windows,Linux,Redhat",
+    "answer": "Linux"
+  },
+  {
+    "question": "Which of the following is the first callback method that is invoked by the system during an activity life-cycle?",
+    "options": "onClick() method,onCreate() method,onStart() method,onRestart() method",
+    "answer": "onStart() method"
+  },
+  {
+    "question": "Which of the following is not an activity lifecycle callback method?",
+    "options": "onClick() method,onCreate() method,onStart() method,onBackPressed() method",
+    "answer": "onClick() method"
+  }
+]

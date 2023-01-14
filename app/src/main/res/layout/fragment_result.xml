@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/spacing_15"
+    tools:context=".ui.result.ResultFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_25"
+        android:text="Your Results"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_size_l"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/total_question_layout_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_25"
+        android:layout_marginTop="@dimen/spacing_25"
+        android:layout_marginEnd="@dimen/spacing_25"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Questions:"
+            android:textAlignment="textStart"
+            tools:textSize="@dimen/font_size_m" />
+
+        <TextView
+            android:id="@+id/total_question_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15"
+            android:textAlignment="textEnd"
+            tools:textSize="@dimen/font_size_m" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/correct_answer_layout_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_25"
+        android:layout_marginTop="@dimen/spacing_25"
+        android:layout_marginEnd="@dimen/spacing_25"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/total_question_layout_group">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Correct Answers:"
+            android:textAlignment="textStart"
+            tools:textSize="@dimen/font_size_m" />
+
+        <TextView
+            android:id="@+id/correct_answer_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15"
+            android:textAlignment="textEnd"
+            tools:textSize="@dimen/font_size_m" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wrong_answer_layout_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_25"
+        android:layout_marginTop="@dimen/spacing_25"
+        android:layout_marginEnd="@dimen/spacing_25"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/correct_answer_layout_group">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wrong Answers:"
+            android:textAlignment="textStart"
+            tools:textSize="@dimen/font_size_m" />
+
+        <TextView
+            android:id="@+id/wrong_answer_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15"
+            android:textAlignment="textEnd"
+            tools:textSize="@dimen/font_size_m" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/skipped_question_layout_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_25"
+        android:layout_marginTop="@dimen/spacing_25"
+        android:layout_marginEnd="@dimen/spacing_25"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/wrong_answer_layout_group">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Skipped Questions:"
+            android:textAlignment="textStart"
+            tools:textSize="@dimen/font_size_m" />
+
+        <TextView
+            android:id="@+id/skipped_question_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15"
+            android:textAlignment="textEnd"
+            tools:textSize="@dimen/font_size_m" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/score_layout_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_25"
+        android:layout_marginTop="@dimen/spacing_25"
+        android:layout_marginEnd="@dimen/spacing_25"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/skipped_question_layout_group">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Your Score:"
+            android:textAlignment="textStart"
+            tools:textSize="@dimen/font_size_m" />
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="15"
+            android:textAlignment="textEnd"
+            tools:textSize="@dimen/font_size_m" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_try_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_15"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/try_again"
+        app:layout_constraintBottom_toTopOf="@id/btn_result_analysis" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_result_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_15"
+        android:backgroundTint="@color/black"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/result_analysis"
+        app:layout_constraintBottom_toTopOf="@+id/btn_home" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/home"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

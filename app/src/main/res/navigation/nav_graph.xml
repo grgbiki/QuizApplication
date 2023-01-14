@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.bigurung.quizapplication.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/actionStartQuiz"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.bigurung.quizapplication.ui.quiz.QuizFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quiz">
+        <action
+            android:id="@+id/actionShowResult"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/resultFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/actionHome"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@+id/homeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.bigurung.quizapplication.ui.result.ResultFragment"
+        android:label="Result"
+        tools:layout="@layout/fragment_result">
+        <argument
+            android:name="userResponse"
+            app:argType="com.bigurung.quizapplication.db.QuizQuestion[]" />
+        <action
+            android:id="@+id/actionShowAnalysis"
+            app:destination="@id/resultANalysisFragment" />
+        <action
+            android:id="@+id/actionRetryQuiz"
+            app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/actionReturnHome"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultANalysisFragment"
+        android:name="com.bigurung.quizapplication.ui.result.ResultAnalysisFragment"
+        android:label="Result"
+        tools:layout="@layout/fragment_result_analysis">
+        <action
+            android:id="@+id/actionHomeScreen"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="userResponse"
+            app:argType="com.bigurung.quizapplication.db.QuizQuestion[]" />
+    </fragment>
+</navigation>

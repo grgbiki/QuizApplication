@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">QuizApplication</string>
+
+    <string name="kotlin_fundamental">Kotlin Fundamental Quiz</string>
+    <string name="quiz_intro">This application stores 30 MCQ regarding Kotlin Android fundamentals stored in the database. \nYou can view your results and analyze them at the end.</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="home">Home</string>
+    <string name="next">Next</string>
+    <string name="try_again">Try Again</string>
+    <string name="result_analysis">Result Analysis</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
